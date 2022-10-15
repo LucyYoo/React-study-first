@@ -4,14 +4,13 @@ import reportWebVitals from './reportWebVitals';
 import Clock from './week1/LandingPage/Clock';
 import CommentList from './week1/Comment/CommentList';
 import NotificationList from './week1/User/Notification/NotificationList';
+import NotiListCopy from './week1/User/Notification/NotiListcopy';
 import Accommodate from './week1/useCounter/Accommodate';
 import Login from './week1/User/Login'
 import ConfirmButtonvFuction from './week1/User/ComfirmButton/ConfirmButtonvFuction';
-
-
-import NotiListCopy from './week1/User/Notification/NotiListcopy'
 //chapter_03
 import Library from './week1/Book/Library';
+import AttendanceBook from './week2/AttendanceBook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -24,11 +23,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
     <React.StrictMode>
       <Clock />
       <Login />
-      <NotiListCopy />
+      <NotificationList />
       <ConfirmButtonvFuction />
       <Library />
       <Accommodate />
       <CommentList />
+      <AttendanceBook />
     </React.StrictMode>
   );
 

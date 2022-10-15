@@ -1,7 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Notification from "./Notification";
 
-const reservedNotifications = [
+const notificationText = [
     {   
         id: 1,
         message: "안녕하세요, 오늘 일정을 알려드립니다.",
@@ -20,31 +20,27 @@ let timer;
 
 export default function NotificationList() {
     const [notifications, setNotification] = useState([]);
-    const notiRef = useRef([]);
-
-    useEffect(() => {
-        timer = setInterval(() => {
-            if(notifications.length < reservedNotifications.length){
+    
+        useEffect(() => {
                 const index = notifications.length;
-                console.log(notifications)
-                setNotification(notiRef.current.push(reservedNotifications[index]));
-            } 
-            else{
-                clearInterval(timer);
-                return;
-            }
-        }, 1000);
-    }, [])
+                if(notifications.length < notificationText.length){
+                    timer = setInterval(() => {
+                        setNotification([...notifications, notificationText[index]])
+                    }, 2000);
+                } 
+                return () => clearInterval(timer);
+
+        }, [notifications])
 
   return (
-    <div>
+    <>
         {notifications.map((notification) => {
                     return <Notification 
                     key={notification.id}
                     id={notification.id}
                     message={notification.message} />;
         })}
-    </div>
+    </>
   )
 }
 

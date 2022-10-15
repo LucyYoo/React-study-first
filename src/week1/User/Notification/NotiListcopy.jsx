@@ -32,8 +32,8 @@ class NotificationList extends React.Component{
         timer = setInterval(() => {
             if(notifications.length < reservedNotifications.length){
                 const index = notifications.length;
-                console.log(notifications)
                 notifications.push(reservedNotifications[index]);
+
                 this.setState({
                     notifications: notifications,
                 });
@@ -52,12 +52,13 @@ class NotificationList extends React.Component{
         
         }
         
-        }
+        }   
 
     render(){
         return (
             <div>
                 {this.state.notifications.map((notification) => {
+                    console.log(this.state.notifications.length);
                     return <Notification 
                     key={notification.id}
                     id={notification.id}
