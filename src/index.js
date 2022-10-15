@@ -11,6 +11,7 @@ import ConfirmButtonvFuction from './week1/User/ComfirmButton/ConfirmButtonvFuct
 //chapter_03
 import Library from './week1/Book/Library';
 import AttendanceBook from './week2/AttendanceBook';
+import SignUp from './week2/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -22,6 +23,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <Clock />
+      <SignUp />
       <Login />
       <NotificationList />
       <ConfirmButtonvFuction />
