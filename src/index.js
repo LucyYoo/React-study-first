@@ -12,6 +12,9 @@ import ConfirmButtonvFuction from './week1/User/ComfirmButton/ConfirmButtonvFuct
 import Library from './week1/Book/Library';
 import AttendanceBook from './week2/AttendanceBook';
 import SignUp from './week2/SignUp';
+import ProfileCoard from './week2/UserCard/ProfileCoard';
+import DarkOnLight from './week2/ThemeColor/DarkOnLight';
+import Calculator from './week2/Temperature/Calculator';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -23,14 +26,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <Clock />
+      <DarkOnLight />
       <SignUp />
       <Login />
+      <ProfileCoard />
       <NotificationList />
       <ConfirmButtonvFuction />
       <Library />
       <Accommodate />
       <CommentList />
       <AttendanceBook />
+      <Calculator />
     </React.StrictMode>
   );
 
