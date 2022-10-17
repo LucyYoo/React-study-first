@@ -15,6 +15,7 @@ import SignUp from './week2/SignUp';
 import ProfileCoard from './week2/UserCard/ProfileCoard';
 import DarkOnLight from './week2/ThemeColor/DarkOnLight';
 import Calculator from './week2/Temperature/Calculator';
+import Blocks from './week2/Blocks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
@@ -26,6 +27,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <Clock />
+      <Blocks />
       <DarkOnLight />
       <SignUp />
       <Login />
