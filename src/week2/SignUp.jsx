@@ -21,7 +21,11 @@ export default function SignUp() {
     <form onSubmit={handleSubmit}>
         <label>
             이름:
-            <input type='text' value={name} onChange={handleChangeName} />
+            <input 
+            type='text' 
+            value={name} 
+            required
+            onChange={handleChangeName} />
         </label>
         <button type='submit'>제출</button>
         <br />
