@@ -30,14 +30,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
       <Blocks />
       <DarkOnLight />
       <SignUp />
-      <Login />
       <ProfileCoard />
       <NotificationList />
-      <ConfirmButtonvFuction />
-      <Library />
-      <Accommodate />
-      <CommentList />
-      <AttendanceBook />
       <Calculator />
     </React.StrictMode>
   );

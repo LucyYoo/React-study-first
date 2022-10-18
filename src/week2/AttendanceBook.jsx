@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const students = [
     {
         name: "Inje",
@@ -15,7 +16,7 @@ const students = [
     },
 ];
 
-export default function AttendanceBook() {
+export default function AttendanceBook(props) {
   return (
     <ul>
         {students.map((student) => {
