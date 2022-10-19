@@ -26,7 +26,7 @@ export default function NotificationList() {
                 if(notifications.length < notificationText.length){
                     timer = setInterval(() => {
                         setNotification([...notifications, notificationText[index]])
-                    }, 2000);
+                    }, 1000);
                 } 
                 return () => clearInterval(timer);
 
