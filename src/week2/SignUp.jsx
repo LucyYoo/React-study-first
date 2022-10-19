@@ -18,7 +18,7 @@ export default function SignUp() {
     };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{marginBottom: '20px'}}>
         <label>
             이름:
             <input 

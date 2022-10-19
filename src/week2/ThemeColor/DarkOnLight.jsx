@@ -1,6 +1,5 @@
 import React, { useCallback, useState } from 'react'
-import AttendanceBook from '../AttendanceBook';
-import MainContent from './MainContent';
+import MainContent from '../MainContent';
 import ThemeContext from './ThemeContext';
 
 export default function DarkOnLight(props) {

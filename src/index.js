@@ -27,12 +27,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(
     <React.StrictMode>
       <Clock />
+      <NotificationList />
       <Blocks />
       <DarkOnLight />
-      <SignUp />
       <ProfileCoard />
-      <NotificationList />
-      <Calculator />
     </React.StrictMode>
   );
 
